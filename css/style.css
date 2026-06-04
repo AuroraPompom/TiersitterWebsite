@@ -201,7 +201,6 @@ section.alt { background: var(--cream-2); }
 .intro .script { display: block; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1; margin-bottom: 6px; }
 .intro p { font-size: 1.08rem; max-width: 40ch; }
 .intro .paw-divider { justify-content: flex-start; margin: 8px 0 22px; }
-.intro .paw-divider::after { display: none; }
 
 .contact-card {
   background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
@@ -465,7 +464,8 @@ section.alt { background: var(--cream-2); }
   .lb-close { top: 14px; right: 14px; }
   .lb-stage figcaption { font-size: 1.1rem; }
   .contact-card { grid-template-columns: 1fr; text-align: center; }
-  .contact-lines a { justify-content: center; }
+  .contact-lines { width: fit-content; max-width: 100%; margin-inline: auto; }
+  .contact-lines a { text-align: left; }
   .legal-card { padding: 34px 24px; }
   .price-table th, .price-table td { padding: 12px 14px; font-size: .92rem; }
 }
