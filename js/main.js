@@ -144,6 +144,23 @@
       if (e.key === "Escape") { close(); }
       else if (e.key === "ArrowLeft") { show(current - 1); }
       else if (e.key === "ArrowRight") { show(current + 1); }
+      else if (e.key === "Tab") {
+        // Fokus innerhalb des Dialogs halten (Fokusfalle)
+        var focusable = [
+          document.getElementById("lbClose"),
+          document.getElementById("lbPrev"),
+          document.getElementById("lbNext")
+        ];
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        } else if (focusable.indexOf(document.activeElement) === -1) {
+          e.preventDefault(); first.focus();
+        }
+      }
     });
   }
 
