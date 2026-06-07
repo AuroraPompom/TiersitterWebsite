@@ -119,7 +119,7 @@
       <svg class="blob b1" viewBox="0 0 200 200" aria-hidden="true"><path fill="currentColor" d="M44 -57C58 -47 71 -36 75 -22C79 -8 74 9 65 23C56 37 43 47 28 54C12 61 -6 65 -22 60C-39 55 -53 41 -60 25C-67 8 -66 -11 -58 -26C-50 -41 -35 -52 -19 -60C-3 -68 14 -73 27 -70C40 -67 30 -67 44 -57Z" transform="translate(100 100)"/></svg>
       <svg class="blob b2" viewBox="0 0 200 200" aria-hidden="true"><path fill="currentColor" d="M48 -60C61 -50 69 -33 71 -16C73 1 69 19 60 34C50 49 35 60 18 65C1 70 -17 69 -33 61C-49 53 -62 39 -67 22C-72 5 -68 -14 -59 -30C-49 -45 -34 -56 -18 -63C-2 -70 16 -72 32 -71C48 -70 35 -70 48 -60Z" transform="translate(100 100)"/></svg>
 
-      <img class="hero-portrait" src="bilder/Profilbild-rund.jpeg" alt="Chiara, mobile Tiersitterin">
+      <picture><source srcset="bilder/Profilbild-rund.webp" type="image/webp"><img class="hero-portrait" src="bilder/Profilbild-rund.jpeg" alt="Chiara, mobile Tiersitterin" width="1254" height="1254" fetchpriority="high" decoding="async"></picture>
       <div class="hero-logo">
         <svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <path d="M32 54s-20-11.5-20-26C12 19 18 14 25 14c4 0 6.5 2 7 4 .5-2 3-4 7-4 7 0 13 5 13 14 0 14.5-20 26-20 26z" stroke="currentColor" stroke-width="2.4"/>
@@ -133,7 +133,12 @@
       <p class="hero-tagline" data-en="Welcome to Chiara's Mobile Pet Care">Willkommen bei Chiaras mobile Tierbetreuung</p>
       <a class="btn" href="#kontakt" data-en="Get in touch now">Jetzt Kontakt aufnehmen</a>
     </div>
-    <div class="hero-right" role="img" aria-label="Chiara sitzt mit einem Kaninchen auf einer sonnigen Blumenwiese"></div>
+    <div class="hero-right">
+      <picture>
+        <source srcset="bilder/hero-chiara-kaninchen.webp" type="image/webp">
+        <img class="hero-bg" src="bilder/hero-chiara-kaninchen.jpg" alt="Chiara sitzt mit einem Kaninchen auf einer sonnigen Blumenwiese" width="1066" height="1598" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
   </div>
 </section>
 
@@ -184,6 +189,10 @@
           <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.5-.4z"/></svg></span>
           <span data-en="Message via WhatsApp">Per WhatsApp schreiben</span>
         </a>
+        <a class="vcard-link" href="chiara.vcf" download="Chiara-Siracusa.vcf">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="10" r="2.4"/><path d="M8 16.5c.6-1.6 2.1-2.5 4-2.5s3.4.9 4 2.5"/></svg></span>
+          <span data-en="Save contact">Kontakt speichern</span>
+        </a>
       </div>
       <div class="qr">
         <div id="qrcode" aria-label="QR-Code zum WhatsApp-Kontakt"></div>
@@ -202,7 +211,7 @@
     </div>
     <div class="about-grid">
       <div class="about-photo">
-        <img src="bilder/chiara-portrait.jpg" alt="Chiara, Tiersitterin">
+        <picture><source srcset="bilder/chiara-portrait.webp" type="image/webp"><img src="bilder/chiara-portrait.jpg" alt="Chiara, Tiersitterin" width="1066" height="1598" loading="lazy" decoding="async"></picture>
       </div>
       <div class="about-text">
         <p class="lead" data-en="Hello! I'm Chiara, 18 years old and currently completing my Abitur (high-school diploma) at the IGS. Animals have played an important role in my life for many years, and my love for them is with me every day.">Hallo! Ich bin Chiara, 18 Jahre alt und absolviere derzeit mein Abitur an der IGS. Tiere spielen schon seit vielen Jahren eine wichtige Rolle in meinem Leben und meine Liebe zu ihnen begleitet mich jeden Tag.</p>
@@ -218,17 +227,17 @@
         <span data-en="<span class=&quot;script&quot;>Insights</span> into my everyday life with animals"><span class="script">Einblicke</span> in meinen Alltag mit Tieren</span>
       </div>
       <div class="gallery-grid">
-        <figure><img src="bilder/katze-dori.jpg" alt="Katze Dori entspannt zuhause"><figcaption data-en="My cat Dori">Meine Katze Dori</figcaption></figure>
-        <figure><img src="bilder/gassi-hunde.jpg" alt="Chiara geht mit zwei Hunden spazieren" style="object-position:50% 15%"><figcaption data-en="Walks with dogs">Gassi-Runden mit Hunden</figcaption></figure>
-        <figure><img src="bilder/huehner.jpg" alt="Chiara bei der Versorgung von Hühnern"><figcaption data-en="Caring for poultry">Versorgung von Geflügel</figcaption></figure>
-        <figure><img src="bilder/huhn.jpg" alt="Chiara hält ein Huhn"><figcaption data-en="Selfie with turkey Benj">Selfie mit Truthahn Benj</figcaption></figure>
-        <figure><img src="bilder/kuehe.jpg" alt="Chiara bei Kühen im Stall"><figcaption data-en="Experience with large animals">Erfahrung mit großen Tieren</figcaption></figure>
-        <figure><img src="bilder/vogel-berg.jpg" alt="Chiara mit einem Vogel in den Bergen"><figcaption data-en="Love for all animals">Liebe zu allen Tieren</figcaption></figure>
-        <figure><img src="bilder/hund-schwarz.jpg" alt="Chiara kümmert sich liebevoll um einen Hund" style="object-position:50% 52%"><figcaption data-en="Loving dog care">Liebevolle Hundebetreuung</figcaption></figure>
-        <figure><img src="bilder/katzen.jpg" alt="Chiara umgeben von mehreren Katzen" style="object-position:50% 30%"><figcaption data-en="Surrounded by cats">Umgeben von Katzen</figcaption></figure>
-        <figure><img src="bilder/huhn-elina.jpg" alt="Chiara mit Hühnchen Elina auf der Schulter" style="object-position:50% 18%"><figcaption data-en="Chicken Elina">Hühnchen Elina</figcaption></figure>
-        <figure><img src="bilder/taube.jpg" alt="Chiara hält behutsam eine Taube" style="object-position:50% 20%"><figcaption data-en="Birds are welcome too">Auch Vögel sind willkommen</figcaption></figure>
-        <figure><img src="bilder/hund-wiki.jpg" alt="Chiara mit ihrem Hund Wiki"><figcaption data-en="Dog Wiki">Hund Wiki</figcaption></figure>
+        <figure><picture><source srcset="bilder/katze-dori.webp" type="image/webp"><img src="bilder/katze-dori.jpg" alt="Katze Dori entspannt zuhause" width="900" height="1600" loading="lazy" decoding="async"></picture><figcaption data-en="My cat Dori">Meine Katze Dori</figcaption></figure>
+        <figure><img src="bilder/gassi-hunde.jpg" alt="Chiara geht mit zwei Hunden spazieren" width="900" height="1600" loading="lazy" decoding="async" style="object-position:50% 15%"><figcaption data-en="Walks with dogs">Gassi-Runden mit Hunden</figcaption></figure>
+        <figure><picture><source srcset="bilder/huehner.webp" type="image/webp"><img src="bilder/huehner.jpg" alt="Chiara bei der Versorgung von Hühnern" width="900" height="1600" loading="lazy" decoding="async"></picture><figcaption data-en="Caring for poultry">Versorgung von Geflügel</figcaption></figure>
+        <figure><picture><source srcset="bilder/huhn.webp" type="image/webp"><img src="bilder/huhn.jpg" alt="Chiara hält ein Huhn" width="900" height="1600" loading="lazy" decoding="async"></picture><figcaption data-en="Selfie with turkey Benj">Selfie mit Truthahn Benj</figcaption></figure>
+        <figure><picture><source srcset="bilder/kuehe.webp" type="image/webp"><img src="bilder/kuehe.jpg" alt="Chiara bei Kühen im Stall" width="1200" height="1600" loading="lazy" decoding="async"></picture><figcaption data-en="Experience with large animals">Erfahrung mit großen Tieren</figcaption></figure>
+        <figure><picture><source srcset="bilder/vogel-berg.webp" type="image/webp"><img src="bilder/vogel-berg.jpg" alt="Chiara mit einem Vogel in den Bergen" width="1080" height="1665" loading="lazy" decoding="async"></picture><figcaption data-en="Love for all animals">Liebe zu allen Tieren</figcaption></figure>
+        <figure><img src="bilder/hund-schwarz.jpg" alt="Chiara kümmert sich liebevoll um einen Hund" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:50% 52%"><figcaption data-en="Loving dog care">Liebevolle Hundebetreuung</figcaption></figure>
+        <figure><picture><source srcset="bilder/katzen.webp" type="image/webp"><img src="bilder/katzen.jpg" alt="Chiara umgeben von mehreren Katzen" width="900" height="1600" loading="lazy" decoding="async" style="object-position:50% 30%"></picture><figcaption data-en="Surrounded by cats">Umgeben von Katzen</figcaption></figure>
+        <figure><picture><source srcset="bilder/huhn-elina.webp" type="image/webp"><img src="bilder/huhn-elina.jpg" alt="Chiara mit Hühnchen Elina auf der Schulter" width="900" height="1600" loading="lazy" decoding="async" style="object-position:50% 18%"></picture><figcaption data-en="Chicken Elina">Hühnchen Elina</figcaption></figure>
+        <figure><picture><source srcset="bilder/taube.webp" type="image/webp"><img src="bilder/taube.jpg" alt="Chiara hält behutsam eine Taube" width="1600" height="737" loading="lazy" decoding="async" style="object-position:50% 20%"></picture><figcaption data-en="Birds are welcome too">Auch Vögel sind willkommen</figcaption></figure>
+        <figure><picture><source srcset="bilder/hund-wiki.webp" type="image/webp"><img src="bilder/hund-wiki.jpg" alt="Chiara mit ihrem Hund Wiki" width="1600" height="737" loading="lazy" decoding="async"></picture><figcaption data-en="Dog Wiki">Hund Wiki</figcaption></figure>
       </div>
     </div>
   </div>
@@ -429,6 +438,10 @@
               WhatsApp
             </a>
             <a class="btn ghost" href="mailto:mobile-tiersitterin-chiara@web.de" data-en="Email">E-Mail</a>
+            <a class="btn ghost" href="chiara.vcf" download="Chiara-Siracusa.vcf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="10" r="2.4"/><path d="M8 16.5c.6-1.6 2.1-2.5 4-2.5s3.4.9 4 2.5"/></svg>
+              <span data-en="Save contact">Kontakt speichern</span>
+            </a>
           </div>
         </div>
         <div class="card">
