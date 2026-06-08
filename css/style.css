@@ -49,7 +49,7 @@ body {
   overflow-x: hidden;
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 a { color: var(--pink-deep); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -227,8 +227,8 @@ section.alt { background: var(--cream-2); }
 .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
 .about-photo { position: relative; }
 .about-photo img {
-  border-radius: var(--radius); box-shadow: var(--shadow); width: 100%;
-  aspect-ratio: 4/5; object-fit: cover;
+  border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: auto;
+  aspect-ratio: 2/3; object-fit: cover; object-position: 50% 30%;
 }
 .about-text p { margin-bottom: 1.1em; }
 .about-text .lead { font-size: 1.15rem; color: var(--ink); }
